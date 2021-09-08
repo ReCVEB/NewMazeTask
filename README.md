@@ -9,7 +9,7 @@ Make sure you have Git LFS: https://git-lfs.github.com/
 
 ## Clone this repo
 ```shell
-git clone https://github.com/mengyuchen/MazeTask
+git clone https://github.com/ReCVEB/NewMazeTask.git
 ```
 ## Push to this repo
 To add your changes to commit
