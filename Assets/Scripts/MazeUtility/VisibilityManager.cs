@@ -13,7 +13,7 @@ public class VisibilityManager : MonoBehaviour
     public float VisibilityDistance = 1.0f;
     [Header("Fog Mode Parameters")]
     [Tooltip("Fog Mode: if ON, fog will appear to prevent user from seeing the environment beyond certain distance")] 
-    public bool FogMode = true;
+    public bool FogMode = false;
     [Tooltip("Anything within Fog Near Distance will be 100% clear.")]
     public float FogNearDistance = 1.0f;
     [Tooltip("Anything beyond Fog Far Distance will be impossible to see. Anything in between Near and Far will linear fade out")]

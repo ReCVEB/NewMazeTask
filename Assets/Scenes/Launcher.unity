@@ -7325,7 +7325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 065aba38326044ebe86a5773498582a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeLimit: 45
+  TimeLimit: 40
   DisplayTime: 1
   TimeText: {fileID: 1926146082}
 --- !u!114 &506155659
@@ -7401,7 +7401,7 @@ MonoBehaviour:
   RightHand: {fileID: 853006544}
   LeftHand: {fileID: 1035900740}
   ControllerConfirm: 1
-  Debug: 1
+  Debug: 0
 --- !u!114 &506155663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7415,7 +7415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DistanceMode: 1
-  VisibilityDistance: 1
+  VisibilityDistance: 0.5
   FogMode: 0
   FogNearDistance: 1
   FogFarDistance: 2.5

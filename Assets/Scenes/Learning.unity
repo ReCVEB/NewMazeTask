@@ -934,7 +934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ArrivalPointName: 
-  TrueTarget: 0
+  TrueTarget: 1
   StartingObject: 0
   debug: 0
 --- !u!65 &390412278
@@ -2673,6 +2673,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: chair
       objectReference: {fileID: 0}
+    - target: {fileID: 2463290989484439116, guid: 5aa4f99e890e81448a1bc6bd12752bb8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Target
+      objectReference: {fileID: 0}
     - target: {fileID: 2463290989484468844, guid: 5aa4f99e890e81448a1bc6bd12752bb8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2777,6 +2782,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: clock
       objectReference: {fileID: 0}
+    - target: {fileID: 4729585688176077253, guid: fe968e8fdc53a7f4aaf6b6023dbe0ad1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Target
+      objectReference: {fileID: 0}
     - target: {fileID: 4729585688176375269, guid: fe968e8fdc53a7f4aaf6b6023dbe0ad1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2845,6 +2855,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LampPost
+      objectReference: {fileID: 0}
+    - target: {fileID: 6788649059922500614, guid: e2cf4b1f6519e594da42fcb27838e0e7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Target
       objectReference: {fileID: 0}
     - target: {fileID: 6788649059922984998, guid: e2cf4b1f6519e594da42fcb27838e0e7,
         type: 3}
@@ -2919,6 +2934,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: guitar
+      objectReference: {fileID: 0}
+    - target: {fileID: 6898647831844451154, guid: 8fe8d96612ee96e4e90b1c897f56329a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Target
       objectReference: {fileID: 0}
     - target: {fileID: 6898647831844548466, guid: 8fe8d96612ee96e4e90b1c897f56329a,
         type: 3}
@@ -3058,6 +3078,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Umbrella
       objectReference: {fileID: 0}
+    - target: {fileID: 5871227674603916213, guid: 616930e18a87ff340ac9f425b04cde14,
+        type: 3}
+      propertyPath: m_TagString
+      value: Target
+      objectReference: {fileID: 0}
     - target: {fileID: 5871227674603689877, guid: 616930e18a87ff340ac9f425b04cde14,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3195,6 +3220,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpaceShuttle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7885989739235889449, guid: 14c0a6c92aa4efa4c9a0e402c8350c5e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Target
       objectReference: {fileID: 0}
     - target: {fileID: 7885989739235396937, guid: 14c0a6c92aa4efa4c9a0e402c8350c5e,
         type: 3}
