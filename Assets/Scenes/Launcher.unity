@@ -7401,7 +7401,7 @@ MonoBehaviour:
   RightHand: {fileID: 853006544}
   LeftHand: {fileID: 1035900740}
   ControllerConfirm: 1
-  Debug: 0
+  Debug: 1
 --- !u!114 &506155663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7415,7 +7415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DistanceMode: 1
-  VisibilityDistance: 0.5
+  VisibilityDistance: 1
   FogMode: 0
   FogNearDistance: 1
   FogFarDistance: 2.5
