@@ -89,7 +89,7 @@ public class MazeManager : MonoBehaviour
             } else {
                 Debug.Log("Preparing testing level:" + (CurrentLevel - 2));
             }
-            arrowManager.Activate(CurrentLevel - 1);
+            arrowManager.Activate(CurrentLevel-1);
         } else {
             timeManager.WriteTimeDisplay("Mission Complete");
             arrowManager.SetTextContent("Mission Complete. Thank you!");

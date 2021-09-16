@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-//Author: Mengyu Chen, 2019
-//For questions: mengyuchenmat@gmail.com
+//Author: Mengyu Chen, 2019; carol he, 2021
+//For questions: mengyuchenmat@gmail.com; carol.hcxy@gmail.com
 public class ArrowManager : MonoBehaviour
 {
     //public properties
@@ -39,7 +39,7 @@ public class ArrowManager : MonoBehaviour
         mText = InstructionText.GetComponentInChildren<TextMeshPro>();
     }
 
-    //level manager call "Activate(int)" function by giving an index value
+    //maze manager call "Activate(int)" function by giving an index value
     //to reference one of the start point objects that arrow avatar can teleport to
     public void Activate(int arrowPosIndex){
         if (StartingPoints[arrowPosIndex] != null){
@@ -51,7 +51,7 @@ public class ArrowManager : MonoBehaviour
             // Debug.Log(ArrowAvatar.transform.position);
             ArrowAvatar.SetActive(true);
             SetTextStatus(true);
-            mText.text = "Please stand on the footprint and click your trigger.";
+            SetTextContent("Please stand on the footprint and click your trigger.");
         } else {
             Debug.Log("Arrow Activation Failed");
         }
@@ -67,7 +67,8 @@ public class ArrowManager : MonoBehaviour
         mText.text = sentence;
     }
     private void SetTextStatus(bool status){
-        InstructionText.transform.position = ArrowAvatar.transform.position;
+ //       InstructionText.transform.position = new Vector3(FootPrint.transform.position.x, 1.3f, FootPrint.transform.position.z+1.0f);
+ //       InstructionText.transform.rotation = FootPrint.transform.rotation;
         InstructionText.SetActive(status);
     }
     private IEnumerator ResetFootPrint(float waitTime){
