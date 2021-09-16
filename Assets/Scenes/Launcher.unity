@@ -7415,7 +7415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DistanceMode: 1
-  VisibilityDistance: 2
+  VisibilityDistance: 1.5
   FogMode: 0
   FogNearDistance: 1
   FogFarDistance: 2.5
@@ -19368,7 +19368,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeImage: {fileID: 1214800579}
-  fadeColor: {r: 1, g: 1, b: 1, a: 0.47843137}
+  fadeColor: {r: 0.9056604, g: 0.14097545, b: 0.14097545, a: 0.47843137}
   fadeDuration: 0.7
   fadeInDuration: 0.2
   fadeOutDuration: 0.5
@@ -19539,7 +19539,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1116856700}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.638, y: 0.247, z: -2.151}
+  m_LocalPosition: {x: -1.579, y: 1.586, z: -2.026}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1537721440}

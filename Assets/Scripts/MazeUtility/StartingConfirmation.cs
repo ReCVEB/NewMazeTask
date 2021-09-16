@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//Author: Mengyu Chen, 2019
-//For questions: mengyuchenmat@gmail.com
+using TMPro;
+//Author: Mengyu Chen, 2019; Carol He, 2021
+//For questions: mengyuchenmat@gmail.com; carol.hcxy@gmail.com
 public class StartingConfirmation : MonoBehaviour
 {
     MazeManager mazeManager;
@@ -10,8 +11,12 @@ public class StartingConfirmation : MonoBehaviour
     TrackPlayer logManager;
     InteractionManager interactionManager;
     [Header("Setup")]
+    [SerializeField] TextMeshPro InstructionText;
     [Tooltip("Setup starting point name. It will appear on txt file recording.")]
     [SerializeField] string StartingPointName = "";
+    [SerializeField] string TargetObjectName = "";
+    
+
 
     private bool triggered = false;
     private bool controllerTouching = false;
@@ -44,6 +49,13 @@ public class StartingConfirmation : MonoBehaviour
                     StartingPointName = transform.name;
                 }
                 logManager.WriteLevelStartingInfo(StartingPointName);
+
+                if (TargetObjectName == "")
+                {
+                    Debug.Log("Please fill out Target Object Name for this Trial");
+                }
+
+                InstructionText.text = "Please Navigate to " + TargetObjectName; 
 
                 triggered = true; //extra safe to make sure if doesn't accidentally trigger twice
             }

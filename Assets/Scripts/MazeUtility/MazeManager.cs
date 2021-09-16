@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System;
 using System.Linq;
 using UnityEngine;
-//Author: Mengyu Chen, 2019
-//For questions: mengyuchenmat@gmail.com
+//Author: Mengyu Chen, 2019; Carol He, 2021
+//For questions: mengyuchenmat@gmail.com; carol.hcxy@gmail.com
 public enum MazeMode : int{tutorial, learning, testing, full};
 public class MazeManager : MonoBehaviour
 {
