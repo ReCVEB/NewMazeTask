@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System;
 using System.Linq;
 using UnityEngine;
-//Author: Mengyu Chen, 2019
-//For questions: mengyuchenmat@gmail.com
+//Author: Mengyu Chen, 2019; Carol He, 2021
+//For questions: mengyuchenmat@gmail.com; carol.hcxy@gmail.com
 public enum MazeMode : int{tutorial, learning, testing, full};
 public class MazeManager : MonoBehaviour
 {
@@ -24,7 +24,7 @@ public class MazeManager : MonoBehaviour
     [HideInInspector] public bool LevelStartConfirmed = false;
 
     [Header("Random Level Loader")]
-    private int levelcount = 22;
+    private int levelcount = 33;
     private int testPhaseStartingIndex = 3;
     private int nextLevel;
     private bool missionComplete = false;
@@ -55,6 +55,13 @@ public class MazeManager : MonoBehaviour
 
         //the total level count depends on how many starting points
         levelcount = arrowManager.StartingPoints.Length + 1;
+        int[] TrialLevels = new int[levelcount-testPhaseStartingIndex];
+        for (int i = 0; i < levelcount-testPhaseStartingIndex; i++)
+        {
+            TrialLevels[i] = i+1;
+            Debug.Log(TrialLevels[i]);
+        }
+
     }
 
     // Update is called once per frame
@@ -89,7 +96,7 @@ public class MazeManager : MonoBehaviour
             } else {
                 Debug.Log("Preparing testing level:" + (CurrentLevel - 2));
             }
-            arrowManager.Activate(CurrentLevel - 1);
+            arrowManager.Activate(CurrentLevel-1);
         } else {
             timeManager.WriteTimeDisplay("Mission Complete");
             arrowManager.SetTextContent("Mission Complete. Thank you!");
@@ -142,7 +149,7 @@ public class MazeManager : MonoBehaviour
         CurrentMode = (MazeMode)mode;
         Debug.Log("Selected Current Mode = " + CurrentMode);
 
-        //if tutorial
+        //if tutorial or full: starting from tutorial
         if (CurrentMode == MazeMode.tutorial || CurrentMode == MazeMode.full){
             nextLevel = 1; // be default tutorial level = 1
             timeManager.SetTimeLimit(int.MaxValue); // for learning purpose, timeCount goes infinite.
@@ -154,7 +161,7 @@ public class MazeManager : MonoBehaviour
             timeManager.SetTimeLimit(int.MaxValue); // for learning purpose, timeCount goes infinite.
             PrepareLevel();
         }
-        //if training
+        //if testing
         if (CurrentMode == MazeMode.testing){
             ChooseLevel();
             PrepareLevel(); //to do: randomize prepare level
@@ -166,8 +173,8 @@ public class MazeManager : MonoBehaviour
         int[] skipLevels = Array.ConvertAll(levels.Split(','), int.Parse);
         for (int i = 0; i < skipLevels.Length; i++)
         {
-            candidates.Add(skipLevels[i] + 1);
-            Debug.Log("Level Skipped " + (skipLevels[i] + 1));
+            candidates.Add(skipLevels[i]);
+            Debug.Log("Level Skipped " + (skipLevels[i]));
         }
         Debug.Log("Remaining " + (levelcount - testPhaseStartingIndex - candidates.Count));
     }
@@ -187,7 +194,7 @@ public class MazeManager : MonoBehaviour
             return;
         }
         while (candidates.Count != levelcount - min){
-            int randNum = UnityEngine.Random.Range(min, levelcount-1);
+            int randNum = UnityEngine.Random.Range(min, levelcount);
             //Debug.Log(randNum + " = generated");
             if (candidates.Add(randNum))
             {
