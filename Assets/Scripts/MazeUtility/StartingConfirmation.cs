@@ -55,7 +55,7 @@ public class StartingConfirmation : MonoBehaviour
                     Debug.Log("Please fill out Target Object Name for this Trial");
                 }
 
-                InstructionText.text = "Please Navigate to " + TargetObjectName; 
+                InstructionText.text = "Please Navigate to the " + TargetObjectName; 
 
                 triggered = true; //extra safe to make sure if doesn't accidentally trigger twice
             }

@@ -1483,7 +1483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d5969babcaec4d91999397de0e23b3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ArrivalPointName: 
+  ArrivalPointName: clock
   TrueTarget: 0
   StartingObject: 1
   debug: 0
@@ -1495,7 +1495,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1029852326}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10, y: 5, z: 15}
@@ -1612,7 +1612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d5969babcaec4d91999397de0e23b3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ArrivalPointName: 
+  ArrivalPointName: umbrella
   TrueTarget: 0
   StartingObject: 0
   debug: 0
@@ -1624,7 +1624,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1040622486}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 8}
@@ -2352,7 +2352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d5969babcaec4d91999397de0e23b3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ArrivalPointName: 
+  ArrivalPointName: guitar
   TrueTarget: 0
   StartingObject: 0
   debug: 0
@@ -2364,7 +2364,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1466847521}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10, y: 4, z: 20}
@@ -2767,7 +2767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d5969babcaec4d91999397de0e23b3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ArrivalPointName: 
+  ArrivalPointName: lamp post
   TrueTarget: 1
   StartingObject: 0
   debug: 0
@@ -2779,7 +2779,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1578127246}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10, y: 5, z: 30}
@@ -2923,7 +2923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d5969babcaec4d91999397de0e23b3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ArrivalPointName: 
+  ArrivalPointName: chair
   TrueTarget: 0
   StartingObject: 0
   debug: 0
@@ -2935,7 +2935,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687335582}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.011335276, y: 0.01310801, z: 0.021322597}
@@ -3427,7 +3427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d5969babcaec4d91999397de0e23b3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ArrivalPointName: 
+  ArrivalPointName: space shuttle
   TrueTarget: 0
   StartingObject: 0
   debug: 0
@@ -3439,7 +3439,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1974516735}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 5, y: 13, z: 5}

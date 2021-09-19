@@ -22,7 +22,7 @@ public class LevelLauncher : MonoBehaviour
         if (Application.isEditor) {
 			for (int i = 0; i < SceneManager.sceneCount; i++) {
 				Scene loadedScene = SceneManager.GetSceneAt(i);
-                //make sure level contains word Maze
+                //make sure level contains word Trial
 				if (loadedScene.name.Contains("Trial")) {
 					SceneManager.SetActiveScene(loadedScene);
 					loadedLevelBuildIndex = loadedScene.buildIndex;
@@ -31,17 +31,17 @@ public class LevelLauncher : MonoBehaviour
 			}
         }
     }
-    public void RefreshLevel()
-    {
-        //refresh and reload the current scene, in case any bug happens.
-        if (loadedLevelBuildIndex > 0)
-        {
-            //if (Input.GetKeyDown(refreshKey))
-            //{
-            //    StartCoroutine(LoadLevel(loadedLevelBuildIndex));
-            //}
-        }
-    }
+    // public void RefreshLevel()
+    // {
+    //     //refresh and reload the current scene, in case any bug happens.
+    //     if (loadedLevelBuildIndex > 0)
+    //     {
+    //         //if (Input.GetKeyDown(refreshKey))
+    //         //{
+    //         //    StartCoroutine(LoadLevel(loadedLevelBuildIndex));
+    //         //}
+    //     }
+    // }
 
     //"selectLevel(int)" function is to be called by MazeManager after checking the arrowmanager
     public void SelectLevel(int levelIndex){

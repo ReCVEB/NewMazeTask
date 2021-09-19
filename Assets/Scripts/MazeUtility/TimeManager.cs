@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-//Author: Mengyu Chen, 2019
-//For questions: mengyuchenmat@gmail.com
+//Author: Mengyu Chen, 2019; Carol He, 2021
+//For questions: mengyuchenmat@gmail.com; carol.hcxy@gmail.com
 public class TimeManager : MonoBehaviour {
     public static TimeManager instance;
     
@@ -23,7 +23,7 @@ public class TimeManager : MonoBehaviour {
     private string objectName = "";
     MazeManager mazeManager;
     TrackPlayer logManager;
-    IntermissionManager intermissionManager;
+    //IntermissionManager intermissionManager;
 
     private void Awake()
     {
@@ -33,7 +33,7 @@ public class TimeManager : MonoBehaviour {
 		timeCount = TimeLimit;
 		mazeManager = MazeManager.instance;
 		logManager = TrackPlayer.instance;
-        intermissionManager = IntermissionManager.instance;
+        //intermissionManager = IntermissionManager.instance;
 	}
 	void Update () {
 		if (shouldCount){
@@ -81,7 +81,8 @@ public class TimeManager : MonoBehaviour {
 					Reset();
 					mazeManager.ChooseLevel();
                     mazeManager.UnloadLevel();
-                    intermissionManager.ActivatePoints();
+                    //intermissionManager.ActivatePoints();
+                    mazeManager.PrepareLevel();
 				}
 			}
 		}
@@ -92,8 +93,8 @@ public class TimeManager : MonoBehaviour {
 			Reset();
 			mazeManager.ChooseLevel();
 			mazeManager.UnloadLevel();
-            //mazeManager.PrepareLevel();
-            intermissionManager.ActivatePoints();
+            mazeManager.PrepareLevel();
+            //intermissionManager.ActivatePoints();
         }
 	}
 	public void Reset(){
