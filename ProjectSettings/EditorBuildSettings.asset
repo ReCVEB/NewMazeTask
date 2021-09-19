@@ -14,16 +14,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Learning.unity
     guid: 44975220dedbfb940af76aa2ce185f54
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Trials/Trial01.unity
     guid: a731f64a5d6ef7f4e8b3fb99f011e2b3
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Trials/Trial02.unity
     guid: 722d5c767b68e28468e501032f55cb97
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Trials/Trial03.unity
     guid: f1287716dc82e504fb63bb3007753eb3
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Trials/Trial04.unity
     guid: cc4b3668b14f2794f89e2b67ea17fff2
   - enabled: 1
@@ -32,6 +32,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Trials/Trial06.unity
     guid: e094f5cb1b3ac734ebb110d3b19608f1
+  - enabled: 1
+    path: Assets/Scenes/Trials/Trial07.unity
+    guid: ce3e0f7af1b84814ab576aea5d973996
+  - enabled: 1
+    path: Assets/Scenes/Trials/Trial08.unity
+    guid: 9c954f368cabb7a43b9964b2f4584870
+  - enabled: 1
+    path: Assets/Scenes/Trials/Trial09.unity
+    guid: 8b5a62105a96e90489b803bfcc2429f8
+  - enabled: 1
+    path: Assets/Scenes/Trials/Trial10.unity
+    guid: 1d4993926ecc1444bb25fa5902860b87
   - enabled: 0
     path: Assets/Scenes/oldScene-Fruits/Learning-o.unity
     guid: 3104c686f0b2af24eb1325adac93be79
