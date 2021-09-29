@@ -133,9 +133,9 @@ public class MazeManager : MonoBehaviour
         targetManager.Init();
         spaceManager.Init();
 
-        if (CurrentLevel <= 2)
+        if (CurrentLevel <= 1)
         {
-            //if in tutorial and learning phase, no need for starting confirmation
+            //if in tutorial, no need for starting confirmation
             ControlledInit();
         }
     }
@@ -158,7 +158,7 @@ public class MazeManager : MonoBehaviour
         //if learning
         if (CurrentMode == MazeMode.learning){
             nextLevel = 2;
-            timeManager.SetTimeLimit(int.MaxValue); // for learning purpose, timeCount goes infinite.
+            timeManager.SetTimeLimit(60); // for learning purpose, 4 mins limitaiton.
             PrepareLevel();
         }
         //if testing
@@ -189,7 +189,7 @@ public class MazeManager : MonoBehaviour
         //check if its moving to learning phase
         if (CurrentMode == MazeMode.full && CurrentLevel == 1){
             nextLevel = 2;
-            timeManager.SetTimeLimit(int.MaxValue);
+            timeManager.SetTimeLimit(60);
             Debug.Log("Tutorial done. Move to next Learning phase");
             return;
         }

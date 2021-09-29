@@ -23,7 +23,7 @@ public class TimeManager : MonoBehaviour {
     private string objectName = "";
     MazeManager mazeManager;
     TrackPlayer logManager;
-    //IntermissionManager intermissionManager;
+    IntermissionManager intermissionManager;
 
     private void Awake()
     {
@@ -33,7 +33,7 @@ public class TimeManager : MonoBehaviour {
 		timeCount = TimeLimit;
 		mazeManager = MazeManager.instance;
 		logManager = TrackPlayer.instance;
-        //intermissionManager = IntermissionManager.instance;
+        intermissionManager = IntermissionManager.instance;
 	}
 	void Update () {
 		if (shouldCount){
@@ -75,14 +75,14 @@ public class TimeManager : MonoBehaviour {
                     Reset();
                     mazeManager.ChooseLevel();
                     mazeManager.UnloadLevel();
-                    StartCoroutine(NextLevel(3.0f));
+                    StartCoroutine(NextLevel(1.0f));
                 }
                 else { 
 					Reset();
 					mazeManager.ChooseLevel();
                     mazeManager.UnloadLevel();
-                    //intermissionManager.ActivatePoints();
-                    mazeManager.PrepareLevel();
+                    intermissionManager.ActivatePoints();
+                    //mazeManager.PrepareLevel();
 				}
 			}
 		}
@@ -93,8 +93,8 @@ public class TimeManager : MonoBehaviour {
 			Reset();
 			mazeManager.ChooseLevel();
 			mazeManager.UnloadLevel();
-            mazeManager.PrepareLevel();
-            //intermissionManager.ActivatePoints();
+            //mazeManager.PrepareLevel();
+            intermissionManager.ActivatePoints();
         }
 	}
 	public void Reset(){
@@ -132,7 +132,7 @@ public class TimeManager : MonoBehaviour {
     }
     public void ProceedLearningPause()
     {
-        StartCoroutine(NextLevel(3.0f));
+        StartCoroutine(NextLevel(1.0f));
         learningPhasePause = false;
         DeactivateDisplay();
     }

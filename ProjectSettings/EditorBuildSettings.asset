@@ -35,13 +35,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Trials/Trial07.unity
     guid: ce3e0f7af1b84814ab576aea5d973996
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Trials/Trial08.unity
     guid: 9c954f368cabb7a43b9964b2f4584870
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Trials/Trial09.unity
     guid: 8b5a62105a96e90489b803bfcc2429f8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Trials/Trial10.unity
     guid: 1d4993926ecc1444bb25fa5902860b87
   - enabled: 0
