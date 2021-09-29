@@ -7247,6 +7247,11 @@ MonoBehaviour:
   - {fileID: 1412383840}
   - {fileID: 1116856700}
   - {fileID: 1116856700}
+  - {fileID: 1116856700}
+  - {fileID: 1116856700}
+  - {fileID: 1116856700}
+  - {fileID: 567649789}
+  - {fileID: 567649789}
   ArrowAvatar: {fileID: 185757453}
   InstructionText: {fileID: 991543921}
   FootPrint: {fileID: 1788845775}
