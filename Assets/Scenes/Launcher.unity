@@ -7247,14 +7247,6 @@ MonoBehaviour:
   - {fileID: 1412383840}
   - {fileID: 1116856700}
   - {fileID: 1116856700}
-  - {fileID: 1116856700}
-  - {fileID: 1116856700}
-  - {fileID: 1116856700}
-  - {fileID: 567649789}
-  - {fileID: 567649789}
-  - {fileID: 567649789}
-  - {fileID: 567649789}
-  - {fileID: 567649789}
   ArrowAvatar: {fileID: 185757453}
   InstructionText: {fileID: 991543921}
   FootPrint: {fileID: 1788845775}
@@ -7388,13 +7380,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 506155652}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b78b96702177b84ba2789f86f11a6b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DistanceMode: 1
-  VisibilityDistance: 1.5
+  DistanceMode: 0
+  VisibilityDistance: 0
   FogMode: 0
   FogNearDistance: 1
   FogFarDistance: 2.5
@@ -20180,7 +20172,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1407755273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20188,7 +20180,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1407755272}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e504ed67e57fd1f49b8ae411d0f365db, type: 3}
   m_Name: 
@@ -21871,7 +21863,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
