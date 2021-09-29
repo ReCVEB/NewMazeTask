@@ -158,7 +158,7 @@ public class MazeManager : MonoBehaviour
         //if learning
         if (CurrentMode == MazeMode.learning){
             nextLevel = 2;
-            timeManager.SetTimeLimit(60); // for learning purpose, 4 mins limitaiton.
+            timeManager.SetTimeLimit(180); // for learning purpose, 4 mins limitaiton.
             PrepareLevel();
         }
         //if testing
@@ -189,7 +189,7 @@ public class MazeManager : MonoBehaviour
         //check if its moving to learning phase
         if (CurrentMode == MazeMode.full && CurrentLevel == 1){
             nextLevel = 2;
-            timeManager.SetTimeLimit(60);
+            timeManager.SetTimeLimit(180);
             Debug.Log("Tutorial done. Move to next Learning phase");
             return;
         }

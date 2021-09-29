@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Valve.VR;
 using Valve.VR.InteractionSystem;
-//Author: Mengyu Chen, 2019
+//Author: Mengyu Chen, 2019; carol he, 2021;
 //For questions: mengyuchenmat@gmail.com
 public class UIManager : MonoBehaviour {
     HeightAdjuster heightAdjuster;
