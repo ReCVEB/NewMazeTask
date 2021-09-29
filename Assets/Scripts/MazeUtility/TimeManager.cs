@@ -75,7 +75,7 @@ public class TimeManager : MonoBehaviour {
                     Reset();
                     mazeManager.ChooseLevel();
                     mazeManager.UnloadLevel();
-                    StartCoroutine(NextLevel(3.0f));
+                    StartCoroutine(NextLevel(1.0f));
                 }
                 else { 
 					Reset();
@@ -132,7 +132,7 @@ public class TimeManager : MonoBehaviour {
     }
     public void ProceedLearningPause()
     {
-        StartCoroutine(NextLevel(3.0f));
+        StartCoroutine(NextLevel(1.0f));
         learningPhasePause = false;
         DeactivateDisplay();
     }
